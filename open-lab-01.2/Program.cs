@@ -1,16 +1,21 @@
-﻿using System;
+using System;
 
 namespace open_lab_01._2
 {
     class Program
     {
+        public static int Sum(int a, int b)
+        {
+            return (a + b);
+        }
+        
+       
         static void Main(string[] args)
         {
-            string line1 = Console.ReadLine();
-            var line2 = Console.ReadLine();
-            int a = int.Parse(line1);
-            int b = int.Parse(line2);
-            int c = a + b;
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int c = Sum(a, b);
+            
             Console.WriteLine($"Vysledok je {c}");
         }
     }
